@@ -1,0 +1,166 @@
+.about__background--position {
+  background-position: 45px 0px;
+}
+
+/* Background team images formula:
+ f(n) = x + 5n
+ where x = {1,2.3,4,5} and n = {n}
+*/
+
+/*
+.about__team-grid {
+
+}
+*/
+
+.team__member {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:nth-child(5n + 1) {
+    .team__member__mancha--bg {
+      @apply bg-team-mancha-1;
+
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .team__member__image {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+      }
+    }
+
+    .team__member__artwork--bg {
+      @apply bg-team-art-1;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &:nth-child(5n + 2) {
+    .team__member__mancha--bg {
+      @apply bg-team-mancha-2;
+
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .team__member__image {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+      }
+    }
+
+    .team__member__artwork--bg {
+      @apply bg-team-art-2;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &:nth-child(5n + 3) {
+    .team__member__mancha--bg {
+      @apply bg-team-mancha-3;
+
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .team__member__image {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+      }
+    }
+
+    .team__member__artwork--bg {
+      @apply bg-team-art-3;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &:nth-child(5n + 4) {
+    .team__member__mancha--bg {
+      @apply bg-team-mancha-4;
+
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .team__member__image {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+      }
+    }
+
+    .team__member__artwork--bg {
+      @apply bg-team-art-4;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &:nth-child(5n + 5) {
+    .team__member__mancha--bg {
+      @apply bg-team-mancha-5;
+
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .team__member__image {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+      }
+    }
+
+    .team__member__artwork--bg {
+      @apply bg-team-art-5;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+/* ===== dropdown styles ===== */
+.team__member__btn {
+  cursor: pointer;
+}
+
+.team__member__dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  transition: height 5s;
+}
+
+.team__member__dropdown-content  {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+  transition: max-height 0.25s ease;
+  max-height: 0;
+  overflow: hidden;
+
+  &--active {
+    max-height: 800px;
+    padding-bottom: 18px;
+  }
+}
